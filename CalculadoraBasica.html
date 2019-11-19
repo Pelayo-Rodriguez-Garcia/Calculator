@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>CalculadoraBásica</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css" />
+    <script type="text/javascript" src="CalculadoraBasica.js"></script>
+
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1 id="titulo">Calculadora Básica</h1>
+    <div class="calculadora">
+
+
+        <input id="texto" type="text" readonly>
+        </form>
+
+        <div class="botones">
+
+            <!--Espacio cada línea del grid-->
+            <button class="boton memoria" onclick="mostrarMemoria()">mrc</button>
+            <button class="boton memoria" onclick="sumarMemoria('resta')">m-</button>
+            <button class="boton memoria" onclick="sumarMemoria('suma')">m+</button>
+            <button class="boton operacion" onclick="escribir('/')">/ </button>
+
+            <button class="boton numero" onclick="escribir(7)">7</button>
+            <button class="boton numero" onclick="escribir(8)">8</button>
+            <button class="boton numero" onclick="escribir(9)">9</button>
+            <button class="boton operacion" onclick="escribir('*')">*</button>
+
+            <button class="boton numero" onclick="escribir(4)">4</button>
+            <button class="boton numero" onclick="escribir(5)">5</button>
+            <button class="boton numero" onclick="escribir(6)">6</button>
+            <button class="boton operacion" onclick="escribir('-')">−</button>
+
+            <button class="boton numero" onclick="escribir(1)">1</button>
+            <button class="boton numero" onclick="escribir(2)">2</button>
+            <button class="boton numero" onclick="escribir(3)">3</button>
+            <button class="boton operacion" onclick="escribir('+')">+</button>
+
+            <button class="boton numero" onclick="escribir(0)">0</button>
+            <button class="boton numero" onclick="escribir('.')">.</button>
+            <button class="boton numero" onclick="limpiar()">C</button>
+            <button class="boton numero" onclick="calcular()">=</button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
