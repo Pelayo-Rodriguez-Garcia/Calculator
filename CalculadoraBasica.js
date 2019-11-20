@@ -1,5 +1,6 @@
 calculado = false;
 memoria = 0;
+expresion = /(?:(?:^|[-+_*/])(?:\s*-?\d+(\.\d+)?(?:[eE][+-]?\d+)?\s*))+$/;
 
 
 function escribir(string) {
@@ -16,10 +17,22 @@ function escribir(string) {
         calculado = false;
 }
 
-function calcular() {
+function permitEval(string) {
 
-    document.getElementById("texto").value = eval(document.getElementById("texto").value);
-    calculado = true;
+    if (expresion.test(string)) {
+        return true;
+    }
+    else {
+        return false
+    }
+}
+
+function calcular() {
+    if (permitEval(document.getElementById("texto").value)) {
+        document.getElementById("texto").value = eval(document.getElementById("texto").value);
+        calculado = true;
+    }
+
 }
 
 function limpiar() {
