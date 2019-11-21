@@ -65,25 +65,6 @@ class Calculadora {
 window.onload = 0;
 c = new Calculadora();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 function escribir(string) {
     if (calculado && !isNaN(string)) {
